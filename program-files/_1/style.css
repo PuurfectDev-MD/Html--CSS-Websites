@@ -1,0 +1,84 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: bisque;
+    
+}
+
+.whole{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(image.png);
+    background-position: center;
+    background-size: contain;
+    overflow:hidden;
+    padding: 25px 10%;
+
+}
+
+.music_title{
+    position: absolute;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: larger;
+
+}
+
+
+.nav{
+
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+    background-color: transparent;
+    
+}
+
+.nav ul li{
+  display: inline-block;
+  
+}
+.nav ul li a{
+  text-decoration: none;
+  color: black;
+  margin: 0 40px;
+  
+}
+
+
+
+.text{
+    font-size: 100px;
+    color: rgb(103, 93, 93);
+    
+}
+
+.text-one{
+    position: absolute;
+    top: 75%;
+    margin-left: -60px;
+  -webkit-text-stroke: 5px;
+  -webkit-text-stroke-color: black;
+  color: transparent;
+  background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXZxdjF2N2g0b2J0NjYwYzZjZmRjbmFoam5wNnpmc2x1NTJoeW8zNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VV8yeDG7X5Wwrow2Ec/giphy.gif);
+  background-position: center;
+  -webkit-background-clip: text;  
+}
+
+.anim{
+    opacity: 0;
+    transform:translateY(30px);
+    animation: moveup 1s linear forwards;
+}
+
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+    
+}
+
